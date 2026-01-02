@@ -29,6 +29,33 @@ lead to easier development for support on the other devices in the series.
 As of the time of writing, the only WatchGuard product with OpenWRT support is the m300.
 
 ### First steps
-Gratefully, the T35 has a number of features that make it easier to reverse engineer and develop on. 
-Namely, the storage is a removable, writable mSATA SSD.
+Gratefully, the T35 has a number of features that make it easier to reverse-engineer and develop on. 
+Namely, the storage is a removable, writable mSATA SSD. 
+None of the drive is encryped (that I encounted, at least).
+The first thing I did was remove the drive and capture an image of the entire SSD and each of the partitions.
+On booting the WatchGuard, the user is greeted by a U-Boot bootloader selection menu to boot into standard or recovery mode from the first three partitions.
+The paritions each contain a kernel u-image and a device tree. 
+As expected, the bootloader boots the kernel in the seleceted partition.
+
+There is a u-boot command line available where one could change the boot parameters and command-line, but it is password protected.
+Ideally, I would reflash the bootloader so that I could edit it, but a mistake would likely brick the board without a way for me to boot again.
+Instead, my plan was to write the OpenWRT kernel and filesystem to the SSD partitioned and named the same way such that the existing bootloader would boot it none the wiser that it was actually booting OpenWRT instead.
+
+### Getting a linux command-line on the stock image
+There was much information that would be useful the collect at runtime on the stock image of the T35, namely the inforation in the `/proc` filesystem. The difficulty is, the shell that one gets in a T35, even when logged in as the admin user, is not a standard linux shell where one could read and edit files; it's a secure network-appliance shell that deliberatly makes it difficult to escape and execute standard linux commands. 
+My first attempt was the swap out the `/sbin/init` process so my script would collect the information I needed and dump it to a file on the disk. 
+The two problems were: 
+
+1) Without the original init process running, much of the info I needed was uninitialized... whoda guessed that?
+2) The filesystem was a `tempfs` so all writes, even to an external USB drive, were ephemeral
+
+Back to the drawing board...
+
+Fortunatly, the WatchGuard engineers sensibly named the user the CLI process runs as user `cli` and the shell it runs is `/usr/bin/cli`.
+I swapped the file `/usr/bin/cli` with a busybox shell executable, and after logging in through the normal watchguard log-in, it launched me a busybox shell where I could read and list the files I needed from the /proc tree.
+The WatchGuard stock kernel left `CONFIG_IKCONFIG_PROC=y` in their .config, so I was able to get the original kernel configuration from the running, original stock image.
+
+### Booting my own kernel
+
+
 
