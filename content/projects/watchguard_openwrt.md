@@ -2,6 +2,7 @@
 date = '2025-09-01T18:11:11-06:00'
 draft = false
 title = 'Porting OpenWRT to a WatchGuard Firebox T35'
+slug = "watchguard_openwrt"
 +++
 
 ## Status: Ongoing
@@ -52,10 +53,10 @@ The two problems were:
 Back to the drawing board...
 
 Fortunatly, the WatchGuard engineers sensibly named the user the CLI process runs as user `cli` and the shell it runs is `/usr/bin/cli`.
-I swapped the file `/usr/bin/cli` with a busybox shell executable, and after logging in through the normal watchguard log-in, it launched me a busybox shell where I could read and list the files I needed from the /proc tree.
-The WatchGuard stock kernel left `CONFIG_IKCONFIG_PROC=y` in their .config, so I was able to get the original kernel configuration from the running, original stock image.
+I swapped the file `/usr/bin/cli` with a busybox shell executable, and after logging in through the normal watchguard log-in, it launched me a busybox shell where I could read and list the files I needed from the `/proc` tree.
+The WatchGuard stock kernel left `CONFIG_IKCONFIG_PROC=y` in their `.config`, so I was able to get the original kernel configuration from the running, original stock image.
 
 ### Booting my own kernel
-
+My first objecive was to 
 
 

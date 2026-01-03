@@ -143,9 +143,9 @@ expiryDate = ["expiryDate"]
   #   name = "x"
   #   url = "https://twitter.com/"
 
-  [[params.socialLinks]]
-    name = "github"
-    url = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+  # [[params.socialLinks]]
+  #   name = "github"
+  #   url = "https://github.com/Afetzner?tab=repositories"
 
 [menu]
 
