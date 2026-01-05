@@ -10,7 +10,7 @@ slug = "fetznerdotme"
 
 #### Innit neat?!
 
-As you cas see at the footer, it's made with [Hugo](https://gohugo.io/) and uses a theme [Hermit-V2](https://github.com/1bl4z3r/hermit-V2). 
+As you can see at the footer, it's made with [Hugo](https://gohugo.io/) and uses a theme [Hermit-V2](https://github.com/1bl4z3r/hermit-V2). 
 I'm not much of a front-end web developer, so I gravitate toward tools that let me focus on writing content in Markdown and generate static HTML/CSS as output.
 Because of that, this page isn’t really about front-end design---it’s about how the site is hosted and the principles behind it.
 
@@ -21,20 +21,20 @@ Since the website is self-hosted, my primary objectives are:
 I'm trepid about giving away too many details about my security posture, but I feel confident enough in my stack that I can disclose the following:
 
 ### Minimizing attack area
-The website is intentionaly simple. 
+The website is intentionally simple. 
 It's a statically served HTML/CSS/JavaScript site with no server-side application logic or database. 
-This significanlty reduces the complexity and atack surface compared to a dynamic website.
+This significantly reduces the complexity and attack surface compared to a dynamic website.
 
-Public traffic is mangaged by a reverse proxy that
+Public traffic is managed by a reverse proxy that
 - Hides my IP address
 - provides some protection against denial-of-service and other network attacks
-- minimizes the traffic I have to allow from the internet into my nework
+- minimizes the traffic I have to allow from the internet into my network
 
-As such, the public facing part of my server does as little as possible and only as much as neccessary.
+As such, the public facing part of my server does as little as possible and only as much as necessary.
 
 ### Isolating and containing the server
 The entire stack uses the principal of least privilege:
-- The web server runs in a rootless container of an unprivilaged user.
+- The web server runs in a rootless container of an unprivileged user.
 - It has only read-only access to only the files it needs.
 - It also runs with OS-level mandatory access controls.
 
