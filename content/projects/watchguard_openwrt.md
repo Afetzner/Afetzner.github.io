@@ -56,7 +56,3 @@ Fortunately, the WatchGuard engineers sensibly named the user the CLI process ru
 I swapped the file `/usr/bin/cli` with a BusyBox shell executable, and after logging in through the normal WatchGuard log-in, it launched me a BusyBox shell where I could read and list the files I needed from the `/proc` tree.
 The WatchGuard stock kernel left `CONFIG_IKCONFIG_PROC=y` in their `.config`, so I was able to get the original kernel configuration from the running, original stock image.
 
-### Booting my own kernel
-My first objective was to 
-
-
