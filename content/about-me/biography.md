@@ -54,7 +54,40 @@ We had to change the database backing the tool and a future database change was 
 
 (See [the project's year-end review document](https://computing.unl.edu/sites/unl.edu.engineering.school-of-computing/files/media/file/SeniorDesignAnnualReport2022-23.pdf) on page 29)
 
-## Undergraduate research with Dr. Variyam
+## Research with Dr. Variyam
+My last year of university I received a [National Science Foundation grant](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1849048) to do undergraduate with [Dr. Variyam](https://cse.unl.edu/~vinod/) and his research on Weak Derandomizations in Time and Space Complexity. Our research was expanding on the work of Jakub Pawlewicz and Mihai Pătraᶊcu's "Order Statistics in the Farey Sequences in Sublinear Time and Counting Primitive Lattice Points in Polygons" *Algorithmica 55 (2009): 271-282.*
 
+Pawlewicz and Pătraᶊcu's work developed an algorithm to compute order statistics in the Farey sequence using the Merten's function. 
+This connection reveals the Farey order-statistic function's close connection with a host of other fundamental number-theory functions including the Möbius, Merten's, Euler's totient, prime-count, square-free, and Riemann's Zeta functions. 
+Dr. Variyam and I worked on developing a reduction complexity hierarchy between these functions. 
 
+I was also exploring a novel algorithm for approximating and computing the Farey sequence's rank and order using it's discrepancy---that is, the measure of the deviation of the Farey-sequence from being uniformly distributed. 
+To this day, I am convinced the discrepancy function can be modeled as a fractal, eluding to a recursive algorithm to compute or approximate it.
+Much of my work was exploratory, using a Python to generate and plot Farey sequence and transformations of them.
+However, I was blocked from developing any concrete proofs about the Farey sequence by not knowing complex analysis, which is needed to understand and expand on much of the existing work on the subject.
 
+## After undergraduate
+I graduated in 2023 with a bachelors in science from the University of Nebraska - Lincoln, with majors in mathematics and computer science.
+For a time, I considered pursuing a PhD at UNL under the guidance of Dr. Variyam. 
+I applied to the PhD program, was accepted and received a research assistantship for funding.
+Ultimately, however, I decided that it was neither the right time or opportunity for me. 
+My work with Dr. Variyam was about as theoretical as one can get on the continuum of applied to theoretical computer science research. 
+From my experience as systems engineering class teaching assistant and as development manager on my team with the USDA, I felt myself drawn more to applied computer science.
+While I still feel drawn to pursue a graduate degree in the future, I would prefer to do so after some time working in industry.
+I instead moved to Indianapolis seeking working as a software developer. 
+
+## Working at non-profit Teachers' Treasures
+After a few months of unemployment in 2023 after graduation while seeking work, one day I decided "I'd rather work for free than not at all!" and looked around for volunteering opportunities in Indianapolis.
+I felt drawn to one in particular [Teachers' Treasures](https://www.teacherstreasures.org/), an organization that collects and distributes school supplies to teachers of low-income schools in Marion county. After volunteering for a short time, I was offered paid, full-time work at Teachers' Treasures as a warehouse associate.
+In addition to warehouse work, I also lead out volunteer groups in logistical tasks, ranging from stocking the store, and sorting donations, and operation during our shopping hours.
+During my time at Teachers' Treasures from 2023-2024, we helped distribute approximately $13 million in school supplies free of charge to teachers in the Indianapolis metropolitan area.
+
+## Working at NCR Voyix
+Seeking a career more closely aligned with my goal of working in IT, I started work at NCR Voyix in 2024 as a customer engineer---essentially a retail technology field service technician. 
+There, I installed and repaired a variety of hardware, including networking equipment (switches, routers, access points, and cabling), self-checkout kiosks (coin and bill recyclers, computer head units, and peripherals), and general use computers. 
+I also worked closely with our customers to deliver exceptional service, prioritizing timely response times, one-call resolution, and availability during business critical emergencies.
+At NCR, my passion for computer networking started to emerge. In Minnesota, I was one of a subset of technicians able to work on networking equipment. 
+As such, a significant portion of my work was on diagnosing, fixing, or replacing cabling, routers, switches, and access points in our customers' retail locations.
+
+<!--## Working at Mutual of Omaha
+In 2025, I began work at Mutual of Omaha information services service desk. There, I -->

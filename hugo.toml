@@ -159,8 +159,8 @@ expiryDate = ["expiryDate"]
     url = "projects/"
     weight = 20
 
-  [[menu.main]]
-    name = "Resumés"
-    url = "resumes/"
-    weight = 30
+  # [[menu.main]]
+  #   name = "Resumés"
+  #   url = "resumes/"
+  #   weight = 30
 
