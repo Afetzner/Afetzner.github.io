@@ -8,12 +8,12 @@ title = 'Network Engineer - Resumé'
 
 ## Education
 **University of Nebraska - Lincoln, BS in Computer Science, Mathematics** \
-*Sept 2019 – May 2023*---*Lincoln, NE, USA*
+*Sept 2019 – May 2023* · *Lincoln, NE, USA*
 
 ## Experience
 **Mutual Of Omaha** \
 ***Information Services Service Desk Analyst*** \
-*Oct 2025-present*---*Remote*
+*Oct 2025-present* · *Remote*
 - Provided first-line technical support in a large enterprise IT environment
 - Troubleshooting Windows, Mac, and Linux desktops and server issues
 - Created, resolved, and escalated incidents and service requests using ServiceNow
@@ -22,7 +22,7 @@ title = 'Network Engineer - Resumé'
 
 **NCR Voyix** \
 ***Field Service Technician (AKA Customer Engineer)*** \
-*Aug 2024–Aug 2025*---*Remote in Indianapolis, IN & Minneapolis, MN*
+*Aug 2024–Aug 2025* · *Remote in Indianapolis, IN & Minneapolis, MN*
 - Troubleshot and installed Windows and Linux based retail software
 - Tested and terminated network twisted-pair cabling
 - Maintained and repaired server, networking, and electromechanical equipment
@@ -30,13 +30,13 @@ title = 'Network Engineer - Resumé'
 
 **Teachers' Treasures** \
 ***Warehouse associate & group leader*** \
-*Sept 2023–Aug 2024*---*Indianapolis, IN*
+*Sept 2023–Aug 2024* · *Indianapolis, IN*
 - Lead groups of up to 15 volunteers in logistical tasks
 - Working with diverse groups, and identifying how to tailor my communication style
 
 **University of Nebraska - Lincoln** \
 ***Teaching assistant & undergraduate researcher*** \
-*Jan 2021–May 2023*---*Lincoln, NE*
+*Jan 2021–May 2023* · *Lincoln, NE*
 - Taught a systems engineering class and an introductory C programming class
 - Communicated technical concepts to an audience ranging in technical ability
 - Read, comprehended, and relayed technical documentation

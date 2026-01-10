@@ -87,10 +87,10 @@ expiryDate = ["expiryDate"]
 [params]
   description = "A portfolio website for IT professional Alex Fetzner"
   # images = [""]
-  themeColor = "#494f5c"
-  accentColor = "#018472"
+  # themeColor = "#494f5c"
+  # accentColor = "#018472"
 
-  #homeSubtitle = "CHANGE ME HOME SUBTITLE"
+  # homeSubtitle = "CHANGE ME HOME SUBTITLE"
   footerCopyright = ' <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>'
   # footerHideThemeName = false
   # bgImg = ""
@@ -131,7 +131,7 @@ expiryDate = ["expiryDate"]
   [params.dateform]
     CopyrightDate = "2006"
     LongDate = "Jan 2, 2006"
-    ShortDate = "Jan 2"
+    ShortDate = "Jan"
     NumDateShort = "2006-01-02"
     NumDateLong = "2006-01-02 15:04 -0700"
 
@@ -143,9 +143,14 @@ expiryDate = ["expiryDate"]
   #   name = "x"
   #   url = "https://twitter.com/"
 
-  # [[params.socialLinks]]
-  #   name = "github"
-  #   url = "https://github.com/Afetzner?tab=repositories"
+  [[params.socialLinks]]
+    name = "github"
+    url = "https://github.com/Afetzner?tab=repositories"
+
+  [[params.socialLinks]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/alex-fetzner-2a9543192"
+
 
 [menu]
 
@@ -159,8 +164,8 @@ expiryDate = ["expiryDate"]
     url = "projects/"
     weight = 20
 
-  # [[menu.main]]
-  #   name = "Resumés"
-  #   url = "resumes/"
-  #   weight = 30
+  [[menu.main]]
+    name = "Resumés"
+    url = "resumes/"
+    weight = 30
 
